@@ -4,6 +4,6 @@ function helloWorld() {
 }
 
 const sayHello = (input) => {
-    console.log(`Hello ${input}`);
-    return "";
+    console.log(`Hello, ${input}.`);
+    return `Hello, ${input}.`;
 }
