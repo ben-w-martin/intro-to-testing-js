@@ -5,5 +5,11 @@ function helloWorld() {
 
 const sayHello = (input) => {
     console.log(`Hello, ${input}.`);
-    return (input === "Alex") ? "Hello, Alex." : "Hello, Jane.";
+    if (input === "Alex") {
+        return "Hello, Alex.";
+    } else if (input === "Jane") {
+        return "Hello, Jane.";
+    } else {
+        return "Hello, Pat!";
+    }
 }

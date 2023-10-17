@@ -27,4 +27,7 @@ describe("sayHello", function () {
     it("should return 'Hello, Alex.', when 'Alex' is passed.", function () {
         expect(sayHello("Alex")).toBe("Hello, Alex.");
     });
+    it("should return 'Hello, Pat!', when 'Alex' is passed.", function () {
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
 });
