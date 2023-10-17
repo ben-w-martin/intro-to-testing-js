@@ -34,6 +34,24 @@ describe("sayHello", function () {
         expect(sayHello(true)).toBe("Hello, World!");
     });
     it("should return 'Hello, World!', when input === false.", function () {
-        expect(sayHello(false)).toBe("Hello, World!")
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
+    it("should return 'Hello, World!', when input type 'null'", function () {
+        expect(sayHello(null)).toBe("Hello, World!");
+    });
+    it("should return 'Hello, World!', when input === '' ", function () {
+        expect(sayHello("")).toBe("Hello, World!");
+    });
+    it("should return 'Hello, World!', when input is number with a decimal space.", function () {
+        expect(sayHello(2.4)).toBe("Hello, World!");
+    });
+    it("should return 'Hello, World!', when input is a string with a number value", function () {
+        expect(sayHello('5')).toBe("Hello, World!");
+    });
+    it("should return 'Hello, World!', when input is an array.", function () {
+        expect(sayHello( [2, 3])).toBe("Hello, World!");
+    });
+    it("should return 'Hello, World!', when input is a string including numbers and letters.", function () {
+        expect(sayHello( "2a")).toBe("Hello, World!");
     });
 });
