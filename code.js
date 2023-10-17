@@ -4,12 +4,15 @@ function helloWorld() {
 }
 
 const sayHello = (input) => {
-    console.log(`Hello, ${input}.`);
-    if (input === "Alex") {
-        return "Hello, Alex.";
-    } else if (input === "Jane") {
-        return "Hello, Jane.";
-    } else {
-        return "Hello, Pat!";
-    }
+    return `Hello, ${input}.`;
 }
+
+    //     console.log(`Hello, ${input}.`);
+//     if (input === "Alex") {
+//         return "Hello, Alex.";
+//     } else if (input === "Jane") {
+//         return "Hello, Jane.";
+//     } else {
+//         return "Hello, Pat!";
+//     }
+// }
