@@ -51,7 +51,10 @@ describe("sayHello", function () {
     it("should return 'Hello, World!', when input is an array.", function () {
         expect(sayHello( [2, 3])).toBe("Hello, World!");
     });
-    it("should return 'Hello, World!', when input is a string including numbers and letters.", function () {
+    it("should return 'Hello, World!', when input is a string beginning with numbers and containing letters.", function () {
         expect(sayHello( "2a")).toBe("Hello, World!");
+    });
+    it("should return 'Hello, World!', when input is a string beginning with letters and containing numbers.", function () {
+        expect(sayHello( "a2")).toBe("Hello, World!");
     });
 });
