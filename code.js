@@ -82,3 +82,7 @@ const isVowel = (input) => {
             break;
     }
 }
+
+const add = (x, y) => {
+        return parseFloat(x) + parseFloat(y);
+}
