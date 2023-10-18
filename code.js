@@ -4,28 +4,38 @@ function helloWorld() {
 }
 
 const sayHello = (input) => {
-    if (input === true) {
-    return "Hello, World!";
-    } else if (input === false) {
-    return "Hello, World!";
-    } else if (input === null) {
-    return "Hello, World!";
-    } else if (input === "") {
-    return "Hello, World!";
-    } else if (typeof input === "number") {
-    return "Hello, World!";
-    } else if (Array.isArray(input) === true) {
-    return "Hello, World!";
-    } else if (Number(input) === parseFloat(input)) {
-    return "Hello, World!";
-    } else if (isNaN(parseFloat(input)) === false) {
-    return "Hello, World!";
-    } else if (typeof input === "string" && input !== "Jane" && input !== "Alex" && input !== "Pat") {
-    return "Hello, World!";
-    } else {
-    return `Hello, ${input}.`;
+    let message;
+    switch(true) {
+    case input === false:
+    case input === true:
+    case input === null:
+    case typeof input === "number":
+    case Array.isArray(input) === true:
+    case typeof input === "string" && input !== "Jane" && input !== "Alex" && input !== "Pat":
+        message = "Hello, World!";
+        break;
+        default:
+        message = `Hello, ${input}.`;
+        break;
     }
+    return message;
 }
+//     if (input === true) {
+//     return "Hello, World!";
+//     } else if (input === false) {
+//     return "Hello, World!";
+//     } else if (input === null) {
+//     return "Hello, World!";
+//     } else if (typeof input === "number") {
+//     return "Hello, World!";
+//     } else if (Array.isArray(input) === true) {
+//     return "Hello, World!";
+//     } else if (typeof input === "string" && input !== "Jane" && input !== "Alex" && input !== "Pat") {
+//     return "Hello, World!";
+//     } else {
+//     return `Hello, ${input}.`;
+//     }
+// }
 
 // const sayHello = (input) => {
 //     switch (input) {
