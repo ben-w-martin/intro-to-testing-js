@@ -27,7 +27,34 @@ const sayHello = (input) => {
     }
 }
 
+// const sayHello = (input) => {
+//     switch (input) {
+//         case input === true:
+//         case input === false:
+//         case input === null:
+//         case input === "":
+//         case typeof input === "number":
+//         case Array.isArray(input) === true:
+//         case Number(input) === parseFloat(input):
+//         case isNaN(parseFloat(input)) === false:
+//         case typeof input === "string" && input !== "Jane" && input !== "Alex" && input !== "Pat":
+//             return "Hello, World!";
+//             break;
+//         default:
+//             return `Hello, ${input}.`;
+//             break;
+//     }
+// }
+
 console.log(isNaN("2a"));
 console.log(isNaN(parseFloat("2a")) === false);
 console.log(isNaN(parseFloat("fasdfa222")) === false);
 // Left off on exercise 10
+
+const isFive = (input) => {
+    if (input == 5) {
+        return true;
+    } else {
+        return false;
+    }
+}
