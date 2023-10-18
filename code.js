@@ -58,3 +58,7 @@ const isFive = (input) => {
         return false;
     }
 }
+
+const isEven = (input) => {
+    return typeof input === "boolean" ? false : (input % 2 === 0) === true;
+}
