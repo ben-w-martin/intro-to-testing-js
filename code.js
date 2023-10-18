@@ -62,3 +62,23 @@ const isFive = (input) => {
 const isEven = (input) => {
     return typeof input === "boolean" ? false : (input % 2 === 0) === true;
 }
+
+const isVowel = (input) => {
+    switch (input) {
+        case "a":
+        case "e":
+        case "i":
+        case "o":
+        case "u":
+        case "A":
+        case "E":
+        case "I":
+        case "O":
+        case "U":
+            return true;
+            break;
+        default:
+            return false;
+            break;
+    }
+}
